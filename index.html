@@ -1,59 +1,31 @@
+
 <!doctype html>
 <html lang="en">
  <head>
   <meta charset="UTF-8">
   <style type="text/css">
-	body{
-		 height:600px;
-		 position:relative;
-		 background: url('https://alifei05.cfp.cn/creative/vcg/veer/1600water/veer-149522514.jpg') no-repeat;		 
-
-	}
+	  body{
+    
+	text-align:center;	
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif, Arial, 'Microsoft Yahei';	/* 文字居中 */
+	background-color:#ccc9c9;
+	background: url("https://img2.huashi6.com/images/resource/p10940/2020/08/07/108825_7288259890.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x422/gravity/Center/crop/700x422/format/webp") no-repeat ;
+  background-size: 100%;
+}
 	img {height:100px;
 	width:300px;
 	text-align:center;
 	
 
 	}
-	div{
-		width:22%;
-		color:#;
-		margin:0.5em auto;
-		padding:1em;
-		
-	}
-	#a{
-	   font-size:25px;   
-	  border:1px solid black;
-	   height:400px;
-	   position:absolute;
-	   left:0;
-	   top:2em;
-	   color:FF00FF;
-	   background-color:cyan;
-	   opacity:0.5;
-
-	  
-	   
-	}
-	#b{
-	   border:1px solid black;
-	   font-size:25px;
-	   position:absolute;
-	   right:0;
-	   height:400px;
-	   top:2em;  
-	   color:black;
-	   background-color:cyan;
-	     opacity:0.6;
-	}
     #c{
-	   height:50px;
+	  
 	   text-align:center;
-	   border:2px solid yellow;
-	   margin-top:7em;
+	   margin-top:1em;
 	   font-size:2em;
-	   color:red;
+	   color:rgb(74, 66, 66);
 	   
 	   
 	}
@@ -61,58 +33,174 @@
 	   width:550px;
 	   font-size:20px;
 	   position:absolute;
-	   top:200px;
-	   left:20em;
-	   opacity:;
+	   margin-left: 500px;
+	   margin-top: 450px;
 	   height:90px;
 	   text-align:center;
 	   
 	}
+	.ul1{ 
+            list-style-type:none; /* ul前面的点  */
+        }
+        *{
+            margin:0px 0px; /* 到边框的距离 */
+        }
+	.menu{
+             background:#747473; /* 导航条背景的颜色  */ 	
+             background-color: rgba(154, 150, 154, 0.878);
+             background: url("https://i0.hdslb.com/bfs/article/8eebff78a6e48fbe4fed7531dd5cf15ed4e91fb5.jpg")no-repeat;
+            
+             
+
+        }
+        .nav{
+            margin:0 auto; 	/* 导航栏文字的位置  */
+            width:700px; 	/* 和文字宽度有关，不能小于文字宽度的总和  */
+            height:70px; 	/* 导航栏的宽度  */
+            margin-left: 500px;
+        }
+        .nav a{
+           float:left;				 /* 导航栏的位置配置 */
+           width:140px;			 /* 选中的文字块的长度  */
+           line-height:70px; 		         /* 选中的文字块的宽度  */
+           text-decoration: none;               /* 去掉连接下划线  */
+           font-size:25px;			 /* 字体大小 */
+           color: #FFFFFF;			 /* 字体颜色 */
+        }
+        .nav li a:hover{
+           background-color: #D8D8D8;	        /* 选中的文字块的颜色 */
+           text-decoration:none;		/* 选中时去掉连接下划线 */	
+        }
+        .nav li a:link{
+           text-decoration:none; /* 连接被点之后没有下划线  */
+
+        }
+		#max{
+  width: 1500px;
+  height: 610px;
+  align-items: center;
+  margin: 5% auto;
+  margin-top: 0px;
+  opacity: 0.8;
+}
+.re{
+  position: relative;
+  height: 200px;
+}
+.re ul{
+  list-style-type:none ;
+}
+.re ul>li{
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  transition: 1s;
+
+}
+.re ul>li img{
+  width: 700px;
+  height: 400px;
+  border-radius: 10%;
+  border: 15px solid #61605f;
+  margin-top: 50px;
+  margin-left: 740px;
+  opacity: 1.2;
+}
+#max ol {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5,55px);
+  grid-template-rows: auto;
+  grid-gap: 1em;gap: 1em;
+  float: right; 
+  margin-top: 280px;
+  list-style: none;
+
+
+
+}
+#max ol li {
+  width: 30px;
+  height: 7px;
+  font-size: 5px;
+  line-height: 15px;
+  float: left;
+  text-align: center;
+  border-radius: 2em;
+  border: 5px solid #999999;
+  margin-left: -200px;
+  margin-top: 150px;
+}
+
   </style>
   <title>Document</title>
  </head>
  <body>
-  <div id="a" class="">	    
-庙堂既高，箫鼓老也，烛泪堆红，几人歌吹？
-人寿百年尔，谁得死其所？有生当醉饮，借月照华庭。
-我不见万古英雄曾拔剑，铁笛高吹龙夜吟；
-我不见千载胭脂泪色绯，刺得龙血画眉红。
-  </div>
-  <div id="b" class="">
-我有屠龙之术， 欲翻流云起舞； 
-我有苍茫之志， 欲煎七海成田；
-我怀绝世之锋， 欲解抵天之柱； 
-我是藏玉之璞， 欲觅神匠成材。 
-吾曾笑云梦乡里文皇帝， 长生何须吞白玉； 
-吾曾笑长锋空折武皇帝， 挥军难渡雪河西。
-吾不惧青天之高，黄地之厚； 
-独恨不逢琢玉手， 晚生不见凤凰来。 
-噫嘘兮，山之既高，神女空候;
-水之既深，龙死荒滩。 
-  </div>
-  <div id="c" class="">
-ToxEch<br>
-    谭鑫豪
-  </div>
-    <div id="d" class="main">
-           <table border="1"> 
-                <tr>
-                    <td><a href="https://ToxEch.github.io/index1.html" target="_blank">第一次作业</a></td>
-                    <td><a href="https://ToxEch.github.io/index2.html" target="_blank">第二次作业</a></td>
-		    <td><a href="https://ToxEch.github.io/index3.html" target="_blank">第三次作业</a></td>
-                    <td>第四次作业</td>
-                    <td>第五次作业</td>
-                </tr>
-                <tr>
-                    <td>第六次作业</td>
-                    <td>第七次作业</td>
-                    <td>第八次作业</td>
-                    <td>第九次作业</td>
-                    <td>第十次作业</td>
-                </tr>
-                
-           </table>
+	<div class="menu">  <!-- class选择器 -->
+        <div class="nav">
+            <ul class="ul1">    <!-- ul标签 -->
+                <li><a href="#"><b><font color="#6e686a">首页</font></b></a></li>
+                <li><a href="https://toxech.github.io/demo.html"><b><font color="#6e686a">我的</font></b></a></li>  <!-- li标签 -->
+                <li><a href="https://toxech.github.io/zuoye.html"><b><font color="#6e686a">作业</font></b></a></li>
+                <li><a href="#"><b><font color="#6e686a">项目</font></b></a></li>
+            </ul>
         </div>
+    </div>
+	<div id="max">
+		<div class="re">
+			<ul>
+				<li><img src="https://img2.huashi6.com/images/resource/thumbnail/2021/12/31/23842_32271190357.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" alt=""></li>
+				<li><img src="https://img2.huashi6.com/images/resource/thumbnail/2021/12/31/225759_67918656039.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" alt=""></li>
+				<li><img src="https://img2.huashi6.com/images/resource/thumbnail/2021/10/29/01428_66859795317.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" alt=""></li>
+				<li><img src="https://img2.huashi6.com/images/resource/thumbnail/2021/11/02/20274_24259810.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" alt=""></li>
+				<li><img src="https://img2.huashi6.com/images/resource/thumbnail/2022/09/14/122628_58888659962.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" alt=""></li>
+			</ul>
+			<ol>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
   </div>
+  <script>
+    window.onload = function(){
+  var box=this.document.getElementsByClassName("re")[0];
+  var lik=box.getElementsByTagName("li");
+  function fun(i,j){//转换图片函数，就是把透明度改了一下
+    lik[i].style.opacity=1;
+    lik[j].style.opacity=0;
+    lik[i+5].style.backgroundColor="#ffffff";//改一下小图标
+    lik[j+5].style.backgroundColor="#00000000"
+  }
+  fun(0,1);//初始化下
+  var i =0;
+  function auto(){//轮播循环函数
+    if(++i>=5){
+      i=0;
+      fun(0,4);
+    }
+    else fun(i,i-1);
+  }
+  timer=this.setInterval(auto,2000);
+  box.onmouseover = function () { //鼠标划上去，停止轮播
+    console.log('good');
+    clearInterval(timer);
+  }
+  box.onmouseout = function () { //鼠标划出，继续轮播
+    timer = setInterval(auto, 3000); //调用定时器
+  }
+  var j =0;
+  for(;j<5;j++){//点击小图标也可以转换图片
+    lik[j+5].ind=j;
+    lik[j+5].onclick=function(){
+      fun(this.ind,i)
+      i=this.ind;
+    }
+  }
+
+}
+    
+</script>
  </body>
 </html>
