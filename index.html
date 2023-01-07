@@ -74,86 +74,90 @@
     img {height:100px;
     width:300px;
     text-align:center;
-    
-  
     }
-      #c{
-      
-       text-align:center;
-       margin-top:1em;
-       font-size:2em;
-       color:rgb(74, 66, 66);
-       
-       
-    }
-    #d{
-       width:550px;
-       font-size:20px;
-       position:absolute;
-       margin-left: 500px;
-       margin-top: 450px;
-       height:90px;
-       text-align:center;
-       
-    }
-  
-    
-      #max{
-    width: 1500px;
-    height: 610px;
-    align-items: center;
-    margin: 5% auto;
-    margin-top: 0px;
-    opacity: 0.8;
-  }
-  .re{
-    position: relative;
-    height: 200px;
-  }
-  .re ul{
-    list-style-type:none ;
-  }
-  .re ul>li{
-    width: 300px;
-    height: 150px;
-    position: absolute;
-    transition: 1s;
-  
-  }
-  .re ul>li img{
-    width: 700px;
-    height: 400px;
-    border-radius: 10%;
-    border: 15px solid #61605f;
-    margin-top: 50px;
-    margin-left: 720px;
-    opacity: 1.2;
-  }
-  #max ol {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(5,55px);
-    grid-template-rows: auto;
-    grid-gap: 1em;gap: 1em;
-    float: right; 
-    margin-top: 280px;
-    list-style: none;
-  
-  
-  
-  }
-  #max ol li {
-    width: 30px;
-    height: 7px;
-    font-size: 5px;
-    line-height: 15px;
-    float: left;
-    text-align: center;
-    border-radius: 2em;
-    border: 5px solid #999999;
-    margin-left: -200px;
-    margin-top: 150px;
-  }
+    * {
+            margin: 0;
+            padding: 0;
+      }
+
+      /* 去除a标签的下划线 */
+      a {
+            text-decoration: none;
+      }
+
+      .container {
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            margin: 20px;
+            /* margin: 100px auto 0 auto;  */
+            box-shadow: 0 0 5px mediumpurple;
+            overflow: hidden;
+            opacity: 0.7;
+
+      }
+
+      .wrap {
+            position: absolute;
+            width: 4200px;
+            height: 400px;
+            z-index: 1;
+      }
+
+      .container .wrap img {
+            float: left;
+            width: 600px;
+            height: 400px;
+      }
+
+      .container .buttons {
+            position: absolute;
+            right: 150px;
+            bottom: 20px;
+            width: 200px;
+            height: 10px;
+            z-index: 2;
+      }
+
+      .container .buttons span {
+            margin-left: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 50px;
+            background-color: mediumslateblue;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+      }
+
+      .container .buttons span.on {
+            background-color: red;
+      }
+
+      .container .arrow {
+            position: absolute;
+            top: 36%;
+            color: mediumpurple;
+            padding: 0 12px;
+            border-radius: 50%;
+            font-size: 50px;
+            z-index: 2;
+      }
+
+      .container .arrow_left {
+            left: 10px;
+      }
+
+      .container .arrow_right {
+            right: 10px;
+      }
+
+      .container .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+      }
+
   
   </style>
 </head>
@@ -168,72 +172,134 @@
       </ul>
     </div>
   </div>
-  <div id="max">
-    <div class="re">
-      <ul>
-        <li><img
-            src="https://img2.huashi6.com/images/resource/thumbnail/2021/12/31/23842_32271190357.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20"
-            alt=""></li>
-        <li><img
-            src="https://img2.huashi6.com/images/resource/thumbnail/2021/12/31/225759_67918656039.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20"
-            alt=""></li>
-        <li><img
-            src="https://img2.huashi6.com/images/resource/thumbnail/2021/10/29/01428_66859795317.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20"
-            alt=""></li>
-        <li><img
-            src="https://img2.huashi6.com/images/resource/thumbnail/2021/11/02/20274_24259810.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20"
-            alt=""></li>
-        <li><img
-            src="https://img2.huashi6.com/images/resource/thumbnail/2022/09/14/122628_58888659962.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20"
-            alt=""></li>
-      </ul>
-      <ol>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ol>
+  <div class="container">
+    <!-- 图片区域 -->
+    <div class="wrap" style="left:-600px;">
+          <img src="https://img2.huashi6.com/images/resource/thumbnail/2021/12/31/23842_32271190357.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" />
+          <img src="https://img2.huashi6.com/images/resource/thumbnail/2021/12/31/225759_67918656039.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" />
+          <img src="https://img2.huashi6.com/images/resource/thumbnail/2021/10/29/01428_66859795317.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" />
+          <img src="https://img2.huashi6.com/images/resource/thumbnail/2021/11/02/20274_24259810.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" />
+          <img src="https://img2.huashi6.com/images/resource/thumbnail/2022/09/14/122628_58888659962.jpg?imageMogr2/quality/75/interlace/1/thumbnail/x385/gravity/Center/crop/700x385/format/webp%7Cwatermark/2/text/6Kem56uZQHRpbnnojonoirE/gravity/South/fill/I2ZmZmZmZg/fontsize/400/font/5b6u6L2v6ZuF6buR/dy/20" />
+          <img src="#" />
+          <img src="#" />
+       
     </div>
-    <script>
-      window.onload = function () {
-        var box = this.document.getElementsByClassName("re")[0];
-        var lik = box.getElementsByTagName("li");
-        function fun(i, j) {//转换图片函数，就是把透明度改了一下
-          lik[i].style.opacity = 1;
-          lik[j].style.opacity = 0;
-          lik[i + 5].style.backgroundColor = "#ffffff";//改一下小图标
-          lik[j + 5].style.backgroundColor = "#00000000"
-        }
-        fun(0, 1);//初始化下
-        var i = 0;
-        function auto() {//轮播循环函数
-          if (++i >= 5) {
-            i = 0;
-            fun(0, 4);
-          }
-          else fun(i, i - 1);
-        }
-        timer = this.setInterval(auto, 2000);
-        box.onmouseover = function () { //鼠标划上去，停止轮播
-          console.log('good');
-          clearInterval(timer);
-        }
-        box.onmouseout = function () { //鼠标划出，继续轮播
-          timer = setInterval(auto, 3000); //调用定时器
-        }
-        var j = 0;
-        for (; j < 5; j++) {//点击小图标也可以转换图片
-          lik[j + 5].ind = j;
-          lik[j + 5].onclick = function () {
-            fun(this.ind, i)
-            i = this.ind;
-          }
-        }
+    <!-- 圆点 -->
+    <div class="buttons">
+          <span id="1">1</span>
+          <span id="2">2</span>
+          <span id="3">3</span>
+          <span id="4">4</span>
+          <span id="5">5</span>
+          
 
+    </div>
+    <!-- 左右控制按钮 -->
+    <a href="javascript:void(0)" class="arrow arrow_left" onclick="preImg()">&lt;</a>
+    <a href="javascript:void(0)" class="arrow arrow_right" onclick="nextImg()">&gt;</a>
+</div>
+
+
+<script>
+var wrap = document.querySelector(".wrap");
+
+var newLeft;
+
+//  上一张
+function preImg() {
+      //   判断当前图片是否为最后一张
+      if (wrap.style.left === "-3600px") {
+            newLeft = -1200;   //是为最后一张就回到最前面一张
+         
+      } else {
+            newLeft = parseInt(wrap.style.left) - 600  //不是就到上一张,因为当前wrap.style.left值是个字符串，所以就需要parseInt()
       }
+      wrap.style.left = newLeft + "px";   // 新位置的值
 
-    </script>
+      index--;    //上一张，每次图标就减去1
+      if(index < 0){     //index最小为0
+            index = 4;
+      }
+      showCurrentDot();
+}
+
+//  下一张
+function nextImg() {
+      //   判断当前图片是否为最后一张
+      if (wrap.style.left === "0px") {
+            newLeft = -2400;   //是为最后一张，就回到第一张
+      } else {
+            newLeft = parseInt(wrap.style.left) + 600  //不是第一张就继续下一张,因为当前wrap.style.left值是个字符串，所以就需要parseInt()
+      }
+      wrap.style.left = newLeft + "px";   // 新位置的值
+
+      index++;    //下一张，每次图标就加1
+      if(index > 4){     //index大于4 ，说明到了最后一张
+            index = 0;
+      }
+      showCurrentDot();
+}
+
+// 自动播放
+var  timer;
+function  autoPlay(){
+      //定时两秒执行一次，下一章 方法调用
+         timer = setInterval(function(){
+               nextImg(); 
+         },2000)
+}
+autoPlay();
+
+// 鼠标悬停时，停止图片轮播
+   
+//   找到当前容器，绑定一个onmouserover
+document.querySelector(".container").onmouseover = function(){
+        //清除定时任务
+        clearInterval(timer);
+}
+
+//鼠标离开时，开始轮播图片
+
+document.querySelector(".container").onmouseleave = function(){
+       //自动播放
+       autoPlay();
+}
+
+//显示小圆点
+var index = 0;
+var  dots = document.getElementsByTagName("span");  //获取所有的小圆点
+function showCurrentDot(){
+         for(var  i = 0; i < dots.length; i++){
+                //设置圆点不选中
+                dots[i].className = "";
+         }
+         //将当前所在位置的图片对应的小圆点选中
+
+         dots[index].className = "on";
+
+}
+showCurrentDot();
+
+//点击小圆点事件
+
+for(var i = 0; i< dots.length; i++){
+        //绑定点击事件
+        dots[i].onclick = function(){
+                //获取点击的圆点的位置(id属性值)
+
+                var  dis = this.id;
+                
+                //设置wrap的left值
+                wrap.style.left = -(dis * 600) + "px";
+
+                //设置红点位置
+
+                index = dis - 1;   //dis是从1开始的，但是索引是从0开始的，所以要减少1
+                showCurrentDot();
+
+        }
+}
+</script>
 </body>
 
 </html>
