@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考试 </title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            cursor: pointer;
+            
+        }
+
+        div {
+            background-color: rgba(100, 100, 100, 0.1);
+            box-sizing: border-box;
+            border: 1px solid rgb(100, 100, 200);
+            border-radius: 30%;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            transition: all 0.5s;
+        }
+
+        div.bd {
+            background-color: rgba(0, 100, 100, 0.05);
+            border: 0px solid;
+            border-radius: 0%;
+        }
+
+        div p {
+            margin: auto;
+            padding: 10%;
+            color: rgb(221, 238, 68);
+            text-align: center;
+            text-shadow: 1px 1px rgb(24, 236, 236);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        const NUMS = 7; var tsBalls = []; var sn = 0; const S = ['20计科一班-20203009——谭鑫豪。心事数径白发，生涯一片青山。空山有雪相待，古道无人独还。门对鹤溪流水，云连雁宕仙家。谁解幽人幽意，惯看山鸟山花。', '青山自是绝色，无人谁与为容。说向市朝公子，何殊马耳东风。烟雨湖光软漾，空濛山色生奇。忆自段家桥水，流连不觉遄飞。山下孤烟远村，天边独树高原。一瓢颜回陋巷，五柳先生对门。插秧已盖田面，疏苗犹逗水光。', '竹簟高人睡觉，水亭野客狂登。帘外熏风燕语，庭前绿树蝉鸣。白云千里万里，明月前溪后溪。惆怅长沙谪去，江潭芳草萋萋。风细飞花相逐，林深啼鸟移时。客至旋开新茗，僧归未拾残棋。夹岸人家临镜，孤村灯火悬星。乔木千枝鹭下，深潭百尺龙吟。清风初号地籁，明月自写天容。贫家何以娱客？但知抹月批风。'];
+        document.body.onmousemove = document.body.ontouchmove = function () {
+            for (let ball of tsBalls) {
+                ball.setPositionDiv();
+            }
+        };
+        document.body.onclick = function () {
+            for (let ball of tsBalls) {
+                ball.randPositionDiv();
+            }
+        };
+        document.body.ondblclick = function () {
+            console.log('double click');
+            for (let ball of tsBalls) {
+                this.removeChild(ball.dom);
+            }
+            tsBalls = []; sn === S.length - 1 ? sn = 0 : sn++;
+            for (var i = 0; i < S[sn].length; i++) {
+                var x0 = i % NUMS; var y0 = Math.floor(i / NUMS);
+                var ballObj = new Ball(x0, y0);
+                ballObj.createDivDom(S[sn][i]);
+                ballObj.randPositionDiv();
+                tsBalls.push(ballObj);
+            }
+        };
+        var bodyWidth = window.innerWidth;
+        var bodyHeight = window.innerHeight;
+        document.body.style.width = bodyWidth + 'px';
+        document.body.style.height = bodyHeight + 'px';
+        var r = bodyWidth > bodyHeight ? bodyHeight / (NUMS * 3 / 2) : bodyWidth / (NUMS * 3 / 2);
+        for (var i = 0; i < S[sn].length; i++) {
+            var x0 = i % NUMS; var y0 = Math.floor(i / NUMS);
+            var ballObj = new Ball(x0, y0); ballObj.createDivDom(S[sn][i]);
+            ballObj.randPositionDiv();
+            tsBalls.push(ballObj);
+        }
+        function Ball(x0, y0) {
+            this.x0 = x0; this.y0 = y0; this.dom = null;
+            this.createDivDom = function (s) {
+                var divDom = document.createElement('div');
+                var pDom = document.createElement('p');
+                pDom.textContent = s;
+                pDom.style.fontSize = r / 2 + 'px';
+                divDom.style.width = divDom.style.height = r + 'px';
+                if (this.x0 === 7 || this.x0 === 14) {
+                    divDom.className = 'bd';
+                }
+                divDom.appendChild(pDom); document.body.appendChild(divDom);
+                this.dom = divDom;
+            };
+            this.randPositionDiv = function () {
+                var x = Math.floor(Math.random() * bodyWidth);
+                if (x >= bodyWidth - r) {
+                    x = bodyWidth - r;
+                }
+                var y = Math.floor(Math.random() * bodyHeight);
+                if (y >= bodyHeight - r) {
+                    y = bodyHeight - r;
+                }
+                this.dom.style.left = x + 'px';
+                this.dom.style.top = y + 'px';
+            };
+            this.setPositionDiv = function () {
+                var x = parseInt(this.x0) * r * 1.2; var y = parseInt(this.y0) * r * 1.2;
+                this.dom.style.left = x + r + 'px'; this.dom.style.top = y + r + 'px';
+            };
+        };
+    </script>
+</body>
+
+</html>
